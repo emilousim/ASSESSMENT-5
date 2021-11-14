@@ -1,4 +1,19 @@
+const { Sequelize } = require('sequelize/types');
 
+require('dotenv').config()
+
+const { CONNECTION_STRING } = process.env;
+
+const sequelize = Sequelize
+
+new Sequelize(CONNECTION_STRING, {
+    dialect: 'postgres',
+    dialectOptions: {
+        ssl: {
+            rejectUnauthorized: false
+        }
+    }
+})
 
 module.exports = {
     seed: (req, res) => {
