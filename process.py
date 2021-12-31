@@ -4,7 +4,7 @@ log_file = open("um-server-01.txt")
 def sales_reports(log_file):
 #line 4 is defining a new function called sales_reports, which takes in one parameter: log_file.
     for line in log_file:
-#line 6 is defining an variable (line) within the log_file object. 
+#line 6 is looping over the file line by line
         line = line.rstrip()
 #line 8 is defining the variable line as line.rstrip(), meaning the line of code will be stripped of whatever's in the (), which in this case will be trailing whitespace
         day = line[0:3]

@@ -30,9 +30,9 @@ module.exports = {
             );    
             
             insert into cities (name, rating, country_id)
-            values ('Ville Platte', '2', '187'),
-            ('Opelousas', '2', '187'),
-            ('Eunice', '1', '187');
+            values ('Baton Rouge', '1', '187'),
+            ('Livingston', '1', '187'),
+            ('Lafayette', '3', '187');
             insert into countries (name)
             values ('Afghanistan'),
             ('Albania'),
